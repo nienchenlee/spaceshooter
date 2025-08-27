@@ -105,12 +105,12 @@
         }
         
         function openGame() {
-            window.open('spaceshooter.html', '_blank');
+            window.open('index.html', '_blank');
         }
         
         function checkFile() {
             const status = document.getElementById('status');
-            fetch('spaceshooter.html')
+            fetch('index.html')
                 .then(response => {
                     if (response.ok) {
                         status.innerHTML = '<div class="status success">✅ 遊戲文件可以正常訪問</div>';
@@ -130,3 +130,4 @@
     </script>
 </body>
 </html>
+
